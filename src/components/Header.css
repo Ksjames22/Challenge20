@@ -1,0 +1,26 @@
+/* src/components/Header.css */
+
+.header {
+    background-color: #282c34; /* Dark background for the header */
+    color: #ffffff; /* White text color */
+    padding: 1.5rem 0; /* Padding for top and bottom */
+    text-align: center; /* Center text */
+    position: relative; /* Allow for positioning of any elements if needed */
+  }
+  
+  .header-title {
+    font-size: 2.5em; /* Large font size for the title */
+    margin-bottom: 0.5rem; /* Space below the title */
+  }
+  
+  .header nav {
+    margin-top: 1rem; /* Space above the navigation */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 2em; /* Adjust font size on smaller screens */
+    }
+  }
+  

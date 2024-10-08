@@ -1,22 +1,26 @@
 // src/pages/Portfolio.jsx
 import React from 'react';
 import Project from '../components/Project';
+import './Portfolio.css'; // Import CSS for Portfolio styling
 
 const Portfolio = () => {
   const projects = [
-    { title: 'Project 1', imageUrl: 'url1', deployedUrl: 'link1', repoUrl: 'repo1' },
-    // Add more projects
+    { title: 'My Portfolio', deployedUrl: 'https://ksjames22.github.io/My-Portfolio/' },
+    // Add more projects here
   ];
 
   return (
-    <section>
+    <section className="portfolio">
       <h2>Portfolio</h2>
-      {projects.map((project, index) => (
-        <Project key={index} {...project} />
-      ))}
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+      </div>
     </section>
   );
 };
 
 export default Portfolio;
+
 

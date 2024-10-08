@@ -1,0 +1,70 @@
+/* src/pages/Contact.css */
+
+.contact {
+    max-width: 600px; /* Limit the width of the section */
+    margin: 2rem auto; /* Center the section */
+    padding: 2rem; /* Padding for the section */
+    background-color: #b1adad94; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  h2 {
+    font-size: 2.5em; /* Size for the main heading */
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  input,
+  textarea {
+    padding: 0.8em; /* Padding for form fields */
+    margin-bottom: 1rem; /* Space below form fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1em; /* Font size for inputs */
+    transition: border-color 0.25s; /* Smooth border color transition */
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #646cff; /* Change border color on focus */
+  }
+  
+  .error {
+    border-color: red; /* Red border for errors */
+  }
+  
+  .error-message {
+    color: red; /* Red color for error messages */
+    margin-bottom: 1rem; /* Space below error messages */
+  }
+  
+  button {
+    padding: 0.6em 1.2em; /* Padding for button */
+    background-color: #646cff; /* Button background color */
+    color: white; /* Text color for button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.25s; /* Smooth background color transition */
+  }
+  
+  button:hover {
+    background-color: #535bf2; /* Darker shade on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 1rem; /* Less padding on smaller screens */
+    }
+  
+    h2 {
+      font-size: 2em; /* Adjust font size for smaller screens */
+    }
+  }
+  

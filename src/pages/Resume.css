@@ -1,0 +1,51 @@
+/* src/pages/Resume.css */
+
+.resume {
+    max-width: 800px; /* Limit the width of the section */
+    margin: 2rem auto; /* Center the section */
+    padding: 2rem; /* Padding for the section */
+    background-color: #b1adad94; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  h2 {
+    font-size: 2.5em; /* Size for the main heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .download-link {
+    display: inline-block; /* Make link a block for better styling */
+    padding: 0.5em 1.2em; /* Padding for the button */
+    background-color: #646cff; /* Button background color */
+    color: white; /* Text color */
+    border-radius: 4px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 1.5rem; /* Space below the button */
+    transition: background-color 0.3s; /* Smooth background transition */
+  }
+  
+  .download-link:hover {
+    background-color: #535bf2; /* Darker color on hover */
+  }
+  
+  h3 {
+    font-size: 2em; /* Size for proficiency heading */
+    margin-bottom: 0.5rem; /* Space below the heading */
+  }
+  
+  .proficiencies {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .proficiencies li {
+    padding: 0.5em 0; /* Space between list items */
+    border-bottom: 1px solid #eee; /* Divider line between items */
+  }
+  
+  .proficiencies li:last-child {
+    border-bottom: none; /* Remove divider from the last item */
+  }
+  
