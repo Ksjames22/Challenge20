@@ -1,38 +1,50 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color-dark: #242424;
+  --background-color-light: #ffffff;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --link-color: #646cff;
+  --link-hover-color: #535bf2;
+  --button-background: #1a1a1a;
+  --button-hover-background: #333; /* Added hover background color */
+  --button-hover-border: #646cff;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: var(--text-color);
+  background-color: var(--background-color-dark);
+
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--link-color);
   text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  transition: color 0.25s; /* Smooth color transition */
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+a:hover {
+  color: var(--link-hover-color);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-bottom: 1rem; /* Space below heading */
 }
 
 button {
@@ -42,27 +54,68 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-background);
+  color: white; /* Ensure text is readable on dark buttons */
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: border-color 0.25s, background-color 0.25s, transform 0.2s; /* Smooth transitions */
 }
 
+button:hover {
+  border-color: var(--button-hover-border);
+  background-color: var(--button-hover-background); /* Slight change on hover for visibility */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Accessibility outline */
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 2rem 0; /* Space around the form */
+}
+
+.form input, 
+.form textarea {
+  width: 100%; /* Full width inputs */
+  max-width: 400px; /* Limit input width */
+  padding: 0.8em;
+  margin: 0.5em 0; /* Space between inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1em; /* Consistent font size */
+  transition: border-color 0.25s; /* Smooth border transition */
+}
+
+.form input:focus, 
+.form textarea:focus {
+  border-color: var(--button-hover-border); /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Light mode styles */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: var(--background-color-light);
   }
+
   a:hover {
-    color: #747bff;
+    color: #747bff; /* Light mode hover color */
   }
+
   button {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light mode button background */
+    color: #333; /* Darker text for light buttons */
+  }
+
+  button:hover {
+    background-color: #e0e0e0; /* Subtle change on hover */
   }
 }
+
+

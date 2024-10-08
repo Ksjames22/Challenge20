@@ -1,0 +1,27 @@
+/* src/components/Navigation.css */
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Space between links */
+    padding: 1rem; /* Padding around the navigation */
+    background-color: #1a1a1a; /* Dark background for navigation */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  }
+  
+  .navbar a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .navbar a:hover {
+    color: #61dafb; /* Change color on hover */
+  }
+  
+  .active {
+    border-bottom: 2px solid #61dafb; /* Underline for active link */
+  }
+  

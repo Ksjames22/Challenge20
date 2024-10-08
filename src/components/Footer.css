@@ -1,0 +1,39 @@
+/* src/components/Footer.css */
+
+.footer {
+    background-color: #1a1a1a; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
+    padding: 2rem 0; /* Padding for top and bottom */
+    text-align: center; /* Center text */
+    position: relative; /* Allow for positioning of any elements if needed */
+    margin-top: 2rem; /* Space above the footer */
+  }
+  
+  .footer p {
+    margin-bottom: 1rem; /* Space below the paragraph */
+    font-size: 1.2em; /* Slightly larger font for visibility */
+  }
+  
+  .footer-links {
+    display: flex; /* Flexbox layout for links */
+    justify-content: center; /* Center links */
+    gap: 2rem; /* Space between links */
+  }
+  
+  .footer a {
+    color: #61dafb; /* Light blue color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .footer a:hover {
+    color: #ffffff; /* Change color on hover for visibility */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer p {
+      font-size: 1em; /* Adjust font size on smaller screens */
+    }
+  }
+  
